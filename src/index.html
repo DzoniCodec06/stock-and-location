@@ -9,208 +9,245 @@
 </head>
 <body>
     <nav>
-        <p></p>
-        <h1>Stock and Location</h1>
         <button id="port"><i class="fa-brands fa-usb"></i> COM 10 <img src="../public/images/arrow-down.png" alt=""> </button>
+        <h1>Stock and Location</h1>
+        <p id="time"></p>
     </nav>
     <div class="main">
         <div class="side-bar">
             <button id="home"><i class="fa-solid fa-house"></i></button>
         </div>
         <div class="center">
-            <div class="search-bar">
+            <div class="edit-field-false" id="editField">
+                <div class="edit-header">
+                    <h1>Box: </h1>
+                    <input type="number" placeholder="1234567890" class="barcode">
+                    <button id="close">X</button>
+                </div>
+                <form action="">
+                    <div class="partition">
+                        <label for="partition01">Partition 1</label>
+                        <input type="text" name="partition01" placeholder="Ime proizvoda">
+                        <label for="sku-01">SKU:</label>
+                        <input type="number" name="slu-01" placeholder="SKU" class="sku">
+                        <label for="qty-1">Qty.</label>
+                        <input type="number" name="qty-1">
+                    </div>
+                    
+                    <div class="partition">
+                        <label for="partition02">Partition 2</label>
+                        <input type="text" name="partition02" placeholder="Ime proizvoda">
+                        <label for="sku-02">SKU:</label>
+                        <input type="number" name="slu-02" placeholder="SKU" class="sku">
+                        <label for="qty-2">Qty.</label>
+                        <input type="number" name="qty-2">
+                    </div>
+
+                    <div class="partition">
+                        <label for="partition03">Partition 3</label>
+                        <input type="text" name="partition03" placeholder="Ime proizvoda">
+                        <label for="sku-03">SKU:</label>
+                        <input type="number" name="slu-03" placeholder="SKU" class="sku">
+                        <label for="qty-3">Qty.</label>
+                        <input type="number" name="qty-3">
+                    </div>
+
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+            <div class="search-bar" id="searchBar">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" id="search" placeholder="Pretrazi Artikle...">
             </div>
-            <div class="containers">
+            <div class="containers" id="cntrs">
                 <div class="container">
                     <div class="boxes">
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
+                        <button id="edit" class="b000"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b001"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b002"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b003"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b004"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b005"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b006"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b007"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b008"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b009"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b010"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b011"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b012"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b013"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b014"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b015"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b016"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b017"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b018"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b019"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b020"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b021"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b022"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b023"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b024"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b025"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b026"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b027"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b028"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b029"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b030"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b031"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     </div>
-                    <button id="last"></button>
+                    <button id="edit" class="last b032"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     <button id="settings"><i class="fa-solid fa-gear"></i></button>
                 </div>
                 <div class="container">
                     <div class="boxes">
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     </div>
-                    <button id="last"></button>
+                    <button id="edit" class="last"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     <button id="settings"><i class="fa-solid fa-gear"></i></button>
                 </div>
                 <div class="container">
                     <div class="boxes">
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     </div>
-                    <button id="last"></button>
+                    <button id="edit" class="last"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     <button id="settings"><i class="fa-solid fa-gear"></i></button>
                 </div>
                 <div class="container">
                     <div class="boxes">
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     </div>
-                    <button id="last"></button>
+                    <button id="edit" class="last"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     <button id="settings"><i class="fa-solid fa-gear"></i></button>
                 </div>
                 <div class="container">
                     <div class="boxes">
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     </div>
-                    <button id="last"></button>
+                    <button id="edit" class="last"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     <button id="settings"><i class="fa-solid fa-gear"></i></button>
                 </div>
             </div>
