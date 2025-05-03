@@ -260,7 +260,7 @@ form {
   border-radius: 10px;
 }
 
-.partition input {
+.partition input, textarea {
   background-color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 17px;
@@ -271,7 +271,15 @@ form {
   transition: all ease 0.2s;
 }
 
-.partition input:hover, .partition input:focus {
+.partition input:disabled {
+  color: #000;
+}
+
+.partition textarea {
+  resize: none;
+}
+
+.partition input:hover, .partition input:focus, .partition textarea:hover, .partition textarea:focus {
   border-color: #636363ee;
 }
 
@@ -308,4 +316,65 @@ input.barcode::-webkit-outer-spin-button, input.sku::-webkit-outer-spin-button, 
 input.barcode::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.spinner-false {
+  display: none;
+}
+
+.spinner {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 9px solid #fff;
+  animation: spinner-bulqg1 0.8s infinite linear alternate,
+       spinner-oaa3wk 1s infinite linear;
+}
+
+@keyframes spinner-bulqg1 {
+  0% {
+     clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+  }
+
+  12.5% {
+     clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
+  }
+
+  25% {
+     clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%);
+  }
+
+  50% {
+     clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+  }
+
+  62.5% {
+     clip-path: polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%);
+  }
+
+  75% {
+     clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%);
+  }
+
+  100% {
+     clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%);
+  }
+}
+
+@keyframes spinner-oaa3wk {
+  0% {
+     transform: scaleY(1) rotate(0deg);
+  }
+
+  49.99% {
+     transform: scaleY(1) rotate(135deg);
+  }
+
+  50% {
+     transform: scaleY(-1) rotate(0deg);
+  }
+
+  100% {
+     transform: scaleY(-1) rotate(-135deg);
+  }
 }
