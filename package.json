@@ -12,5 +12,8 @@
   "type": "commonjs",
   "devDependencies": {
     "electron": "^35.2.1"
+  },
+  "dependencies": {
+    "@woocommerce/woocommerce-rest-api": "^1.0.1"
   }
 }
