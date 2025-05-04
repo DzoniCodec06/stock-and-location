@@ -10,14 +10,6 @@ const api = new WooCommerceRestApi({
   version: 'wc/v3'
 });
 
-const boxes = new Object({
-    '001': {
-        id1: '111',
-        id2: '112',
-        id3: '113',
-    }
-});
-
 const productOneName = document.getElementById("prd1Name");
 const productOneSku = document.getElementById("sku1");
 const productOneQty = document.getElementById("qty1");
@@ -126,7 +118,9 @@ editButtons.forEach(editBtn => {
         }
         let btnId = parseInt(editBtn.className.slice(1));
         //console.log(btnId);
-        let skus = [`0${btnId}`, `0${btnId+1}`, `0${btnId+2}`];
+        let skus = [`${btnId}`.padStart(4, '0'), `${btnId+1}`.padStart(4, '0'), `${btnId+2}`.padStart(4, '0')];
+
+        console.log(skus);
 
         for (let n = 0; n < skus.length; n++) {
             try {

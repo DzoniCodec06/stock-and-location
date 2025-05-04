@@ -21,39 +21,43 @@
             <div class="spinner-false" id="spin"></div>
             <div class="edit-field-false" id="editField">
                 <div class="edit-header">
-                    <h1>Box: </h1>
-                    <input type="number" placeholder="1234567890" class="barcode">
+                    <div class="box-barcode">
+                        <h1>Box: </h1>
+                        <input type="number" placeholder="12345678" class="barcode">
+                    </div>
                     <button id="close">X</button>
                 </div>
                 <form action="">
-                    <div class="partition">
-                        <label for="partition03">Partition 3</label>
-                        <textarea name="partition03" placeholder="Ime proizvoda" id="prd3Name"></textarea>
-                        <!-- <input type="" name="partition03" placeholder="Ime proizvoda" id="prd3Name"> -->
-                        <label for="sku-03">SKU:</label>
-                        <input type="number" name="slu-03" placeholder="SKU" class="sku" id="sku3" disabled>
-                        <label for="qty-3">Qty.</label>
-                        <input type="number" name="qty-3" id="qty3">
-                    </div>
-                    
-                    <div class="partition">
-                        <label for="partition02">Partition 2</label>
-                        <textarea name="partition02" placeholder="Ime proizvoda" id="prd2Name"></textarea>
-                        <!-- <input type="text" name="partition02" placeholder="Ime proizvoda" id="prd2Name"> -->
-                        <label for="sku-02">SKU:</label>
-                        <input type="number" name="slu-02" placeholder="SKU" class="sku" id="sku2" disabled>
-                        <label for="qty-2">Qty.</label>
-                        <input type="number" name="qty-2" id="qty2">
-                    </div>
-
-                    <div class="partition">
-                        <label for="partition01">Partition 1</label>
-                        <textarea name="partition01" placeholder="Ime proizvoda" id="prd1Name"></textarea>
-                        <!-- <input type="text" name="partition01" placeholder="Ime proizvoda" id="prd1Name"> -->
-                        <label for="sku-01">SKU:</label>
-                        <input type="number" name="slu-01" placeholder="SKU" class="sku" id="sku1" disabled>
-                        <label for="qty-1">Qty.</label>
-                        <input type="number" name="qty-1" id="qty1">
+                    <div class="partitions">
+                        <div class="partition">
+                            <label for="partition01">Partition 1</label>
+                            <textarea name="partition01" placeholder="Ime proizvoda" id="prd1Name"></textarea>
+                            <!-- <input type="text" name="partition01" placeholder="Ime proizvoda" id="prd1Name"> -->
+                            <label for="sku-01">SKU:</label>
+                            <input type="number" name="slu-01" placeholder="SKU" class="sku" id="sku1" disabled>
+                            <label for="qty-1">Qty.</label>
+                            <input type="number" name="qty-1" id="qty1">
+                        </div>
+                        
+                        <div class="partition">
+                            <label for="partition02">Partition 2</label>
+                            <textarea name="partition02" placeholder="Ime proizvoda" id="prd2Name"></textarea>
+                            <!-- <input type="text" name="partition02" placeholder="Ime proizvoda" id="prd2Name"> -->
+                            <label for="sku-02">SKU:</label>
+                            <input type="number" name="slu-02" placeholder="SKU" class="sku" id="sku2" disabled>
+                            <label for="qty-2">Qty.</label>
+                            <input type="number" name="qty-2" id="qty2">
+                        </div>
+    
+                        <div class="partition">
+                            <label for="partition03">Partition 3</label>
+                            <textarea name="partition03" placeholder="Ime proizvoda" id="prd3Name"></textarea>
+                            <!-- <input type="" name="partition03" placeholder="Ime proizvoda" id="prd3Name"> -->
+                            <label for="sku-03">SKU:</label>
+                            <input type="number" name="slu-03" placeholder="SKU" class="sku" id="sku3" disabled>
+                            <label for="qty-3">Qty.</label>
+                            <input type="number" name="qty-3" id="qty3">
+                        </div>
                     </div>
 
                     <input type="submit" id="submit">
@@ -66,40 +70,40 @@
             <div class="containers" id="cntrs">
                 <div class="container">
                     <div class="boxes">
-                        <button id="edit" class="b000"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b001"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b002"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b003"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b004"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b005"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b006"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b007"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b008"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b009"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b010"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b011"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b012"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b013"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b014"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b015"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b016"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b017"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b018"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b019"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b020"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b021"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b022"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b023"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b024"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b025"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b026"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b027"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b028"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b029"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b030"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b031"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0000"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0003"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0006"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0009"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0012"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0015"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0018"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0021"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0023"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0025"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0026"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0029"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0032"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0035"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0038"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0041"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0044"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0047"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0050"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0053"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0056"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0059"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0062"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0065"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0068"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0071"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0074"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0077"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0080"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0083"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0086"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0089"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     </div>
-                    <button id="edit" class="last b032"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                    <button id="edit" class="last b0092"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     <button id="settings"><i class="fa-solid fa-gear"></i></button>
                 </div>
                 <div class="container">
@@ -218,40 +222,40 @@
                 </div>
                 <div class="container">
                     <div class="boxes">
-                        <button id="edit" class="b400"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b401"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b402"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b403"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b404"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b405"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b406"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b407"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b408"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b409"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b410"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b411"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b412"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b413"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b414"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b415"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b416"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b417"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b418"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b419"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b420"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b421"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b422"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b423"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b424"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b425"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b426"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b427"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b428"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b429"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b430"><i class="fa-solid fa-pencil" id="pen"></i></button>
-                        <button id="edit" class="b431"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0196"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0199"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0202"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0205"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0208"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0211"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0214"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0217"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0220"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0223"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0226"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0229"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0232"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0235"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0238"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0241"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0244"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0247"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0250"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0253"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0256"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0259"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0262"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0265"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0268"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0271"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0274"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0277"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0280"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0283"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0286"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                        <button id="edit" class="b0289"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     </div>
-                    <button id="edit" class="last"><i class="fa-solid fa-pencil" id="pen"></i></button>
+                    <button id="edit" class="last 0292"><i class="fa-solid fa-pencil" id="pen"></i></button>
                     <button id="settings"><i class="fa-solid fa-gear"></i></button>
                 </div>
             </div>
